@@ -1,3 +1,5 @@
+install: libx11-dev libxtst-dev pkg-config
+
 script: make
 
 language: c

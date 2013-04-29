@@ -3,7 +3,7 @@ PREFIX=/usr/local
 
 TARGET := xcape
 
-CFLAGS += -Wall -O -march-native
+CFLAGS += -Wall -Wextra -O 
 CFLAGS += `pkg-config --cflags xtst x11`
 LDFLAGS += `pkg-config --libs xtst x11`
 LDFLAGS += -pthread
