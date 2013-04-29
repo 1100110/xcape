@@ -1,9 +1,9 @@
 INSTALL=install
-PREFIX=/usr
+PREFIX=/usr/local
 
 TARGET := xcape
 
-CFLAGS += -Wall
+CFLAGS += -Wall -O -march-native
 CFLAGS += `pkg-config --cflags xtst x11`
 LDFLAGS += `pkg-config --libs xtst x11`
 LDFLAGS += -pthread
